@@ -1,0 +1,88 @@
+body {
+  background:
+    -webkit-linear-gradient(45deg, hsla(212, 36%, 16%, 1) 0%, hsla(212, 36%, 16%, 0) 70%),
+    -webkit-linear-gradient(315deg, hsla(146, 10%, 19%, 1) 10%, hsla(146, 10%, 19%, 0) 80%),
+    -webkit-linear-gradient(225deg, hsla(205, 36%, 11%, 1) 10%, hsla(205, 36%, 11%, 0) 80%),
+    -webkit-linear-gradient(135deg, hsla(52, 23%, 5%, 1) 100%, hsla(52, 23%, 5%, 0) 70%);
+  background:
+    linear-gradient(45deg, hsla(212, 36%, 16%, 1) 0%, hsla(212, 36%, 16%, 0) 70%),
+    linear-gradient(135deg, hsla(146, 10%, 19%, 1) 10%, hsla(146, 10%, 19%, 0) 80%),
+    linear-gradient(225deg, hsla(205, 36%, 11%, 1) 10%, hsla(205, 36%, 11%, 0) 80%),
+    linear-gradient(315deg, hsla(52, 23%, 5%, 1) 100%, hsla(52, 23%, 5%, 0) 70%);
+
+  background-attachment: fixed;
+ 
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+ 
+  padding: 0;
+  margin: 0; 
+}
+
+
+
+* {
+  font-family: "Segoe UI";
+  /*font-size: 18px;*/
+  color: white;
+}
+
+
+
+input {
+  background: transparent;
+}
+
+
+.player1 {
+  display: inline-block;
+  color: white;
+  padding: 5pt;
+  padding-left: 10pt;
+  padding-right: 10pt;
+  background-color:rgba(62, 80, 180, 0.3); 
+}
+
+
+.player2 {
+  display: inline-block;
+  color: white;
+  padding: 5pt;
+  padding-left: 10pt;
+  padding-right: 10pt;
+  background-color:rgba(255, 63, 128, 0.3); 
+}
+
+
+.row-div {
+  display: flex;
+  /*padding: 10pt;*/
+  /*border: 1px solid red;*/
+  text-align: center;
+  vertical-align: center;
+}
+
+
+.cell-div {
+  flex: 1;
+  /*border: 1px solid green;*/
+  /*text-align: center;*/
+  /*vertical-align: center;*/
+}
+
+
+.rps-image {
+  width: 40px;
+  height: 40px;
+}
+
+
+.rps-text {
+  font-family: "Segoe UI";
+  font-size:  9pt;
+}
+
+

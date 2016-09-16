@@ -1,0 +1,289 @@
+.debug
+	border 1px solid red
+
+
+//div
+	//border 1px solid red
+	//border-radius 3px
+
+
+
+/// common elements
+
+.opaque-50
+	opacity 0.1
+
+
+.opaque-70
+	opacity 0.3
+
+
+.hidden-item 
+	visibility hidden
+
+
+.flex-box
+	display flex
+	align-self center
+	justify-content center
+
+
+
+.flex-box-right
+	display flex
+	justify-content flex-end
+	align-self flex-end
+
+
+.flex-item
+	flex 1
+	padding 10pt;
+
+
+
+/// columns
+.center-column
+	@extend .flex-item
+	
+
+
+
+
+/// lobbies
+.lobby-caption-background
+	background-color #444444
+
+
+//.lobbies 
+//	min-width 700px
+
+
+.message
+	color rgb(124 255 0)
+
+
+.lobby 
+	/*position: relative;*/
+	min-width 700px
+	margin 0em
+	background #333333
+	/*border-radius: 3px;*/
+	/*border: 1px solid red;*/
+
+
+.lobby-name
+	/*display: inline-block;*/
+	color white
+	padding 5pt
+	padding-left 20pt
+	padding-right 20pt
+	font-size 1.5em
+	/*background-color:rgba(0, 255, 0, 0.2); */
+	background-color #444444
+
+
+
+
+
+/// buttons
+.delete-button
+	@extend .lobby-caption-background
+	color red
+	border 1px dotted red
+	width 30px
+	height 30px
+
+
+.button-base 
+	display inline-block
+	cursor pointer
+	text-decoration none
+	color white
+	padding 10px 20px
+	text-transform uppercase
+	white-space nowrap
+
+
+.green-button
+	@extend .button-base
+	background-color rgba(0, 255, 0, 0.5)
+
+
+.green-button:hover
+	box-shadow 0px 0px 20px green
+
+
+.red-button
+	@extend .button-base
+	background-color rgba(255, 0, 0, 0.5)
+
+
+.red-button:hover
+	box-shadow 0px 0px 20px rgba(255, 0, 0, 0.5)
+
+
+
+
+
+/// players colors
+.player1_color
+	background-color rgba(62, 80, 180, 0.3)
+
+
+.player2_color
+	background-color rgba(255, 63, 128, 0.3)
+
+
+
+
+
+/// round
+.rps-item
+	display inline-block
+	color white
+	padding 5pt
+	margin 3pt
+	border 1px solid transparent
+	border-radius 4px
+
+
+.rps-item1
+	@extend .rps-item, .player1_color
+
+
+.rps-item2
+	@extend .rps-item, .player2_color
+
+
+.rps-item-selected
+	//border: 1px solid red
+	box-shadow 0px 0px 10px #fff
+	//box-shadow 0px 0px 10px 2px white
+
+
+//.rps-item-hint
+	//border: 1px solid red
+	//box-shadow 0px 0px 5px #fff
+	//box-shadow 0px 0px 10px 2px black
+
+
+.rps-item-winner
+	box-shadow 0px 0px 7px 4px green
+	//background-color rgba(0, 128, 0, 0.1)
+
+
+/// lobbies preview
+//.lobbies-preview 
+//	max-width 400px
+
+
+.lobby-preview
+	min-width 200px
+	margin 5pt
+	background #333333
+	//background rgba(47, 79, 79, 0.5)
+	//border 1 px solid blue
+
+
+
+.lobby-name-preview
+	/*display: inline-block;*/
+	color white
+	//padding 5pt
+	//padding-left 20pt
+	//padding-right 20pt
+	//font-size 1.5em
+	/*background-color:rgba(0, 255, 0, 0.2); */
+	background-color #444444
+
+
+
+/// other stuff
+.container 
+	position absolute
+	left 0
+	top 0
+	right 0
+	bottom 0
+
+
+.score
+	font-family 'Consolas', 'Courier New', 'monospace'
+
+
+.add-lobby-input
+	@extend .lobby-caption-background
+	border none
+	padding 3pt 10pt 5pt 10pt
+	color white
+	font-size 1.5em
+
+
+.add-lobby-input:focus
+	outline none
+
+
+//.users
+	//text-align right
+
+
+.user-in-list
+	display inline-block
+	text-transform uppercase
+	padding 3pt 7pt
+	margin 3pt
+	background-color rgb(30, 144, 255)
+
+
+.user-in-list-banned
+	@extend .user-in-list
+	background-color red
+
+
+.user-ban-timeout
+	display inline-block
+	color red
+	font-size 0.7em
+
+
+.round-divider
+	display inline-block
+	font-size 2em
+
+
+.round-timeout-input
+	//display inline
+	text-align center
+	width 50px
+	font-size 1.5em
+	margin-left 5pt
+	margin-right 5pt
+	border 1px solid green
+
+
+.round-hint
+	position absolute
+	top 50%
+	left 50%
+	transform translateX(-50%) translateY(-50%)
+
+
+.rps-item-overlay
+	position absolute
+	top 50%
+	left 50%
+	transform translateX(-50%) translateY(-50%)
+
+
+.rps-item-hint
+	//font-size 2em
+	color red
+	font-weight bold
+	text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
+	//opacity 1	
+
+
+.rps-item-wrong-guess
+	font-size 4em
+	color red
+	//opacity 1		
